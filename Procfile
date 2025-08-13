@@ -1,0 +1,1 @@
+web: gunicorn idg2.wsgi
