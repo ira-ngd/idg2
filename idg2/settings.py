@@ -21,18 +21,19 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-v4ui3p-k1=)%mlfqcr^yd^rg0ci@c@wkk-6%7-)$g*@3^ewz)h"
+SECRET_KEY = os.environ.get("SECRET_KEY")
 #ali: os.environ.get("SECRET_KEY")
-
+#ali: worked: "django-insecure-v4ui3p-k1=)%mlfqcr^yd^rg0ci@c@wkk-6%7-)$g*@3^ewz)h" 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = os.environ.get("DEBUG", "False") == "True"
 #ali: os.environ.get("DEBUG", "False") == "True"
 
-ALLOWED_HOSTS = ['.idg2.onrender.com','localhost','127.0.0.1']
-#ali: os.environ.get("ALLOWED_HOSTS", "").split(",")
+ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS", "").split(",")
+#ali: ALLOWED_HOSTS in Env Variables='.idg2.onrender.com,localhost,127.0.0.1'     
+#     and use this:  os.environ.get("ALLOWED_HOSTS", "").split(",")
 #ali: ['.idg2.onrender.com','localhost','127.0.0.1']
-#ali: temp: ['*']
+#ali: worked: temp: ['*']
 
 # Application definition
 
