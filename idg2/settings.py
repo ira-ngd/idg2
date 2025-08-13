@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-v4ui3p-k1=)%mlfqcr^yd^rg0ci@c@wkk-6%7-)$g*@3^ewz)h
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 #ali: os.environ.get("DEBUG", "False") == "True"
 
 ALLOWED_HOSTS = ['idg2.onrender.com']
