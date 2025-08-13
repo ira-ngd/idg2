@@ -29,9 +29,10 @@ SECRET_KEY = "django-insecure-v4ui3p-k1=)%mlfqcr^yd^rg0ci@c@wkk-6%7-)$g*@3^ewz)h
 DEBUG = True
 #ali: os.environ.get("DEBUG", "False") == "True"
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['idg2.onrender.com']
 #ali: os.environ.get("ALLOWED_HOSTS", "").split(",")
 #ali: ['.idg2.onrender.com,localhost,127.0.0.1']
+#ali: temp: ['*']
 
 # Application definition
 
