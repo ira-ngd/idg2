@@ -1,4 +1,0 @@
-# مسیر ویندوز
-if (Test-Path "C:\Users\irand\Desktop\Ali Projects\idg2\.venv\Scripts\Activate.ps1") {
-    & "C:\Users\irand\Desktop\Ali Projects\idg2\.venv\Scripts\Activate.ps1"
-}
