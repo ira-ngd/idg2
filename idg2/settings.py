@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = os.environ.get("DEBUG", "False") == "True"
 #ali: os.environ.get("DEBUG", "False") == "True"
 
-ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS", "")
+ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS", "").split(",")
 #ali: ALLOWED_HOSTS in Env Variables='.idg2.onrender.com,localhost,127.0.0.1'     
 #     and use this:  os.environ.get("ALLOWED_HOSTS", "").split(",")
 #ali: ['.idg2.onrender.com','localhost','127.0.0.1']
